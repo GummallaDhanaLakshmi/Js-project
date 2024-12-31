@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Flight</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Book a Flight</h1>
+  </header>
+
+  <main>
+    <section class="booking-form">
+      <h2>Flight Booking</h2>
+      <form id="flightBookingForm">
+        <div class="form-group">
+          <label for="departure">Departure Airport:</label>
+          <select id="departure" required>
+            <option value=""><span>Select Departure Airport</span></option>
+            <option value="JFK">John F. Kennedy International Airport (JFK) - New York</option>
+            <option value="LAX">Los Angeles International Airport (LAX) - Los Angeles</option>
+            <option value="ORD">O'Hare International Airport (ORD) - Chicago</option>
+            <option value="SFO">San Francisco International Airport (SFO) - San Francisco</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="destination">Destination Airport:</label>
+          <select id="destination" required>
+            <option value="">Select Destination Airport</option>
+            <option value="LAX">Los Angeles International Airport (LAX) - Los Angeles</option>
+            <option value="JFK">John F. Kennedy International Airport (JFK) - New York</option>
+            <option value="ORD">O'Hare International Airport (ORD) - Chicago</option>
+            <option value="MIA">Miami International Airport (MIA) - Miami</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="date">Departure Date:</label>
+          <input type="date" id="date" required>
+        </div>
+        <div class="form-group">
+          <label for="passengers">Number of Passengers:</label>
+          <input type="number" id="passengers" min="1" value="1" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" required>
+        </div>
+        <button type="submit">Book Flight</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- <footer>
+    <p>&copy; 2024 Flight Booking</p>
+  </footer> -->
+
+  <script src="script.js"></script>
+</body>
+</html>

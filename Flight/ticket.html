@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Ticket</title>
+  <link rel="stylesheet" href="styl.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      width: 80%;
+      margin: 50px auto;
+      background-color: whitesmoke;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px 8px blue;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      color: white;
+      background-color: #3C99DC;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .ticket-details {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      
+    }
+
+    .ticket-details h2 {
+      font-size: 2rem;
+      color: #3C99DC;
+    }
+
+    .ticket-details h3 {
+      font-size: 1.5rem;
+      color: #3C99DC;
+    }
+
+    .ticket-info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      color: #333;
+    }
+
+    .ticket-info p {
+      margin: 0;
+    }
+
+    .airplane-icon {
+      width: 640px; /* Adjust size of the airplane */
+      height: auto;
+      margin-right: 10px; /* Space between icon and text */
+    }
+
+    .footer {
+      background-color: #3C99DC;
+      color: white;
+      text-align: center;
+      width:300px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      background-color: #3C99DC;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    .button:hover {
+      background-color: #003366;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Flight Ticket</h1>
+  </header>
+
+  <div class="container">
+    <main>
+      <section class="ticket-details">
+        <!-- Airplane icon added here -->
+        <img src="plane7-removebg-preview.png" alt="Airplane Icon" class="airplane-icon">
+        
+        <div class="ticket-info">
+          <h2>Your Flight Ticket</h2>
+          <h3>Boarding Pass</h3>
+          <p id="ticketDetails"></p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="footer">
+    <a href="index.html" class="button">Back to Booking</a>
+  </div>
+
+  <script src="ticket.js"></script>
+</body>
+</html>
